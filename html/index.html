@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>CHAT</title>
+    <meta name="charset" content="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body onload="onload()">
+    <div id="Main">
+      <audio id="Ding" src="sound.mp3"></audio>
+      <h1 id="Title">Chat</h1>
+      <div id="AccessPort">
+        <label id="NameLabel">Name</label>
+        <input id="nick" type="text">
+        <br><br>
+        <label id="IDLabel">Channel</label>
+        <input id="kanal" type="text" value="chat1">
+        <input id="ConnectButton" class="Button" type="submit" value="Connect" onclick="connect()">
+      </div>
+      <h2 id="RoomID">Channel: none</h2>
+      <div id="Chat">
+        <p id="message0" class="message"> - </p>
+        <p id="message1" class="message"> - </p>
+        <p id="message2" class="message"> - </p>
+        <p id="message3" class="message"> - </p>
+        <p id="message4" class="message"> - </p>
+        <p id="message5" class="message"> - </p>
+        <p id="message6" class="message"> - </p>
+        <p id="message7" class="message"> - </p>
+        <p id="message8" class="message"> - </p>
+        <p id="message9" class="message"> - </p>
+        <input id="czat" type="text">
+        <button id="SendMessage" class="Button" onclick="send()">Send</button>
+      </div>
+      <br><br>
+    </div>
+  </body>
+</html>
